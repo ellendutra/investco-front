@@ -74,7 +74,7 @@ async function cadastrarUsuario() {
 
     setTimeout(() => {
       window.location.href = "login.html";
-    }, 7000);
+    }, 2500);
   } catch (error) {
     if (error.response && error.response.status === 409) {
       toastr.error("E-mail já cadastrado!");
