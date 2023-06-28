@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 100px auto;
+  font-weight: 400;
+}
+
+body, input, label, select, option{
+  font-family: 'Inter', sans-serif;
+  display: block;
+  width: 100%;
+}
+
+main {
+  display: flex;
+}
+
+section {
+  width: 100%;
+}
+
+img {
+  width: 400px;
+  display: block;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 28px;
+  border-bottom: 4px solid #449A47;
+}
+
+.login {
+  text-decoration: none;
+  color: white;
+  background-color: #449A47;
+  padding: 16px;
+  display: block;
+  border-radius: 4px;
+}
+
+form {
+  margin-top: 50px;
+  width: 100%;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+input {
+  border: 1px solid rgb(221, 204, 204);
+  height: 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 0 10px 0 10px;
+  color: #4d4d4d;
+}
+
+input:focus {
+  outline: 1px solid rgb(199, 189, 189);
+}
+
+select {
+  appearance: none; 
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid rgb(221, 204, 204);
+  font-family: 'Arial';
+  font-size: 16px;
+  background-image: url('./img/arrow.svg'); 
+  background-repeat: no-repeat;
+  background-position: right center; 
+  background-size: 20px; 
+  -webkit-appearance: none; 
+}
+
+select:focus {
+  outline: 1px solid rgb(199, 189, 189);
+}
+
+.investidor, .administrador {
+  display: block;
+}
+
+.esconde {
+  display: none;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: rgb(165, 172, 178);
+}
+
+button {
+  width: 100%;
+  background-color: #449A47;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+button:hover, .login:hover {
+  background-color: #1d601f;
+}
+
+button:active, .login:active {
+  background-color: #1d601f;
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    margin: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  
+  section {
+    width: auto;
+  }
+
+  img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px){
+  img {
+    width: 80%;
+    height: auto;
+  }
+}

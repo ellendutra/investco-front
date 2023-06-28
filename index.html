@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invest Co</title>
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <img src="./img/dollar-donation.gif" alt="" />
+      </section>
+
+      <section>
+        <header>
+          <h1>Cadastre-se</h1>
+          <a class="login" href="./login.html">Entrar</a>
+        </header>
+
+        <form id="formulario">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+
+          <label for="role">Papel</label>
+          <select id="role" name="role" required>
+            <option value="">Escolha uma opção</option>
+            <option value="administrador">Administrador</option>
+            <option value="investidor">Investidor</option>
+          </select>
+
+          <div id="investidor" class="esconde investidor">
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+
+            <label for="tolerancia">Tolerância de risco</label>
+            <select id="tolerancia" name="tolerancia">
+              <option value="">Escolha uma opção</option>
+              <option value="baixa">Baixa</option>
+              <option value="media">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+
+            <label for="renda">Renda</label>
+            <input type="texto" name="renda" id="renda" placeholder="Digite sua renda">
+
+            <label for="prazo">Prazo de investimento</label>
+            <input type="text" name="prazo" id="prazo" placeholder="Digite seu prazo de investimento">
+
+            <label for="perfil">Perfil de investimento</label>
+            <select id="perfil" name="perfil">
+              <option value="">Escolha uma opção</option>
+              <option value="conservador">Conservador</option>
+              <option value="moderado">Moderado</option>
+              <option value="agressivo">Agressivo</option>
+            </select>
+          </div>
+
+          <div id="administrador" class="esconde administrador">
+            <label for="nivel">Nível de acesso</label>
+            <input type="text" name="nivel" id="nivel" placeholder="Digite seu nível de acesso">
+
+            <label for="codigo">Código de acesso</label>
+            <input type="text" name="codigo" id="codigo" placeholder="Digite seu código de acesso">
+          </div>
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
